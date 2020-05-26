@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Technologisty</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Barlow:400,500,600,700%7cRoboto:400,500,700&amp;display=swap">
+    <!-- <link rel="stylesheet" href="assets/css/libraries.css" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+       <link rel="stylesheet" href="assets/css/Custom.css" />
+<!-- Date picker -->
+<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<!-- Date picker ends here-->
+    </head>
+
+<body>
+    <noscript>
+        <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+            Please enable it to continue.</strong>
+    </noscript>
+    <!-- =========================
+        Header
+    =========================== -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/new-images/logo-new.png" class="logo-light" alt="logo">
+                    <img src="assets/new-images/logo-new.png" class="logo-dark" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button">
+                    <span class="menu-lines"><span></span></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavigation">
+                    <ul class="navbar-nav mr-auto ml-auto">
+                        <li class="nav__item with-dropdown">
+
+                        </li><!-- /.nav-item -->
+                        <li class="nav__item with-dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Our Brands</a>
+                        </li>
+                        <li class="nav__item with-dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Featured
+                                Products</a>
+                        </li>
+                        <!-- /.nav-item -->
+                        <li class="nav__item with-dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">About Us </a>
+                        </li><!-- /.nav-item -->
+                        <li class="nav__item with-dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Contact Us
+                            </a>
+                        </li><!-- /.nav-item -->
+                        <!-- /.nav-item -->
+                    </ul><!-- /.navbar-nav -->
+                </div><!-- /.navbar-collapse -->
+                <div class="navbar-actions">
+                    <ul class="navbar__actions-list list-unstyled mb-0 d-flex align-items-center">
+                        <!-- <li>
+                <a href="#" class="action__btn action__btn-cart">
+                  <i class="icon-cart"></i><span class="cart__counter">3</span>
+                </a>
+              </li> -->
+                        <li>
+
+                            <a href="quote.html" id="quote-menu-btn"
+                                class="action__btn btn btn__white action__btn-contact">Get a Quote</a>
+
+                        </li>
+
+
+                        <!-- <li><a href="#" class="action__btn action__btn-search"><i class="icon-search"></i></a></li>
+              <li><a href="#" class="action__btn action__btn-humburgerMenu"><i class="icon-menu"></i></a></li>
+              -->
+                    </ul>
+
+                    <div class="cart-popup">
+                        <ul class="list-unstyled">
+                            <li class="cart-item">
+                                <div class="cart__item-img"><img src="assets/images/shop/thumbs/1.png" alt="thumb">
+                                </div>
+                                <div class="cart__item-content">
+                                    <h6 class="cart__item-title">Mismo Briefcase</h6>
+                                    <div class="cart__item-detail"><span>1 x</span>$ 38.00</div>
+                                    <i class="cart__item-delete">&times;</i>
+                                </div><!-- /.cart-item-content -->
+                            </li><!-- /.cart-item -->
+                            <li class="cart-item">
+                                <div class="cart__item-img"><img src="assets/images/shop/thumbs/2.png" alt="thumb">
+                                </div>
+                                <div class="cart__item-content">
+                                    <h6 class="cart__item-title">Brown Leather</h6>
+                                    <div class="cart__item-detail"><span>1 x</span>$ 33.00</div>
+                                    <i class="cart__item-delete">&times;</i>
+                                </div><!-- /.cart-item-content -->
+                            </li><!-- /.cart-item -->
+                        </ul>
+                        <div class="cart-subtotal d-flex justify-content-between">
+                            <span>Subtotal:</span>
+                            <span class="color-theme">$71.00</span>
+                        </div><!-- /.cart-subtotal -->
+                        <div class="cart-action d-flex justify-content-between">
+                            <a href="#" class="btn btn__primary">View Cart</a>
+                            <a href="#" class="btn btn__secondary">Checkout</a>
+                        </div><!-- /.cart-action -->
+                    </div><!-- /.cart-popup -->
+                </div><!-- /.navbar-actions -->
+            </div><!-- /.container -->
+        </nav><!-- /.navabr -->
+    </header><!-- /.Header -->
+
+    <!-- content goes here -->
+    <!-- ============================
+        Page Title section
+    ============================== -->
+    <section class="quote-page-title" style="background-image: url(assets/new-images/new-page-banner.png);">
+
+        <div class="container">
+            <h4 class="page-title-heading">Fill Out the Form to get a Quotation for your Order</h4>
+        </div>
+
+    </section>
+    <!-- ============================
+        Form Section
+    ============================== -->
+    <section>
+        <div class="container">
+            <form action="">
+             <!-- Address, date, quote and validation date-->   
+             <div class="d-flex justify-content-between">
+
+                 <div class="first-div">
+                   <h5 class="mb-10">Technologistry LLC</h5>
+                   <p><strong>Mail:</strong> 8324 Flanders Drive, 
+                    Apt.111,<br> San Diego, CA, 92126-6209  </p>
+                   <p><strong>Email:</strong> Info@technologitry.com   </p>
+                   <p><strong>Phone: </strong>  917-310-1819 </p>
+
+                 </div>
+
+
+                 <div class="second-div">
+
+                    <h6 class="mb-6">Date:</h6>
+                    <input class="mb-10" id="datepicker" width="250" />
+                    
+                    <h6 class="mb-6 mt-20">Quotation#</h6>
+                    <input id ="quoteid" type="text" / value="T321">
+                    
+                    <h6 class="mb-6 mt-20">Valid till</h6>
+                    <input id ="valid-date" type="text" / value="">
+                
+                </div>
+             </div> 
+
+
+            <div class="mt-60">
+                <hr/>
+            </div>
+            <div class="mt-60"></div>
+
+             <!-- Addres for billing and shipping -->
+             <div class="row">
+                 <div class="col-md-4 bill-to-forms">
+                  <h5>Bill Address</h5>
+
+                  <input class="form-control" type="text" placeholder ="Company Name" id="">
+                  <input class="form-control" type="text" placeholder ="Contact Name" id="">
+                  <input class="form-control" type="text" placeholder ="Address line 1" id="">
+                  <input class="form-control" type="text" placeholder ="Address line 2" id="">
+                  <input class="form-control" type="text" placeholder ="City, State, Zip" id="">
+                  <input class="form-control"type="tel" placeholder ="Phone number" id="">
+                  <input class="form-control" type="email" placeholder ="Email Address" id="">
+                 
+                </div>
+                 <div class="col-md-4 d-flex justify-content-center align-items-center">
+                     <button id ="copy-to-btn" class="btn action__btn-contact  mt-60 mb-60">
+                         Copy to
+                         <i class="fa fa-arrow-right"></i>
+                        
+                    </button>
+                 </div>
+                 <div class="col-md-4 bill-to-forms">
+                     <h5>Shipping Address</h5>
+                     <input class="form-control" type="text" placeholder ="Company Name" id="">
+                     <input class="form-control" type="text" placeholder ="Contact Name" id="">
+                     <input class="form-control" type="text" placeholder ="Address line 1" id="">
+                     <input class="form-control" type="text" placeholder ="Address line 2" id="">
+                     <input class="form-control" type="text" placeholder ="City, State, Zip" id="">
+                     <input class="form-control"type="tel" placeholder ="Phone number" id="">
+                     <input class="form-control" type="email" placeholder ="Email Address" id="">
+                   
+                 </div>
+             </div>
+             <!-- spacing and line starts here -->
+             <div class="mt-60">
+                <hr/>
+            </div>
+            <!-- spacing and line ends here -->
+            <div class="mt-60"></div>
+             <!-- Table for order detailing -->
+             <div class="row">
+                 <div class="col-md-12">
+                    <table class="table">
+                        <thead class="bg-darkblue" style="color: #fff;">
+                          <tr>
+                            <th scope="col">Sales Rep</th>
+                            <th scope="col">P.O/Ref No.</th>
+                            <th scope="col">Ship Date</th>
+                            <th scope="col">Ship Method</th>
+                            <th scope="col">F.O.B Point</th>
+                            <th scope="col">Terms</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Only for Existing customers</th>
+                            <td>78904</td>
+                            <td>5 days ARO</td>
+                            <td>
+                                <select class="form-control">
+                                    <option> 2 days</option>
+                                    <option> 5 days</option>
+                                    <option> 10 days</option>
+                                </select>
+                            </td>
+                            <td>Destination</td>
+                            <td>
+                                <select class="form-control" id="">
+                                    <option>Credit Card</option>
+                                </select>
+                            </td>
+                          </tr>                       
+                        </tbody>
+                      </table>
+                      <!-- second table starts here -->
+
+                      <table class="table">
+                        <thead class="bg-darkblue" style="color: #fff;">
+                          <tr>
+                            <th scope="col">Part No./ S.K.U</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Qty</th>
+                        
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">CCTVIP</th>
+                            <td>Sont LTO 30 tape media 5TB new bacl clour with disc space</td>
+                            <td>12</td>
+                         
+                          </tr>
+                          <tr>
+                            <th scope="row">CCTVIP</th>
+                            <td>Sont LTO 30 tape media 5TB new bacl clour with disc space</td>
+                            <td>12</td>
+                         
+                          </tr>
+                          <tr>
+                            <th scope="row">CCTVIP</th>
+                            <td>Sont LTO 30 tape media 5TB new bacl clour with disc space</td>
+                            <td>12</td>
+                         
+                          </tr>
+                       
+                        </tbody>
+                      </table>
+                      <!-- second table ends here -->
+                 </div>
+             </div>
+<!-- spacing and line starts here -->
+<div class="mt-60">
+    <hr/>
+</div>
+<div class="mt-60"></div>
+<!-- spacing and line ends here -->
+            <!-- Terms and condition and special instruction -->
+             <div class="row">
+                 <div class="col-md-12">
+                 <h5>Terms & Conditions</h5>
+                 <ul>
+                     <li> 3.5% fee shall be Charged on CC / PayPal payment method.</li>
+                     <li>All Prices are subject to change without prior notice.</li>
+                     <li>For all CC orders please attached filled Credit Card Authorization for.</li>
+                     <li> First Order of new customer with CC terms shall only be shipped to BILL TO Address only.</li>
+                 </ul>
+                <div class="mt-40"></div>
+                <h5>Special Instructions</h5>
+                <textarea name="" id="" cols="50" rows="8"></textarea>
+                
+               
+            
+            </div>
+  
+
+            <div class="col-md-12 text-right">
+                <button class="btn btn-primary bg-darkblue mt-40">Submit</button>
+            </div>
+
+             </div>
+
+            </form>
+        </div>
+    </section>
+
+
+    <!-- content part ends here -->
+
+    <!-- built files will be auto injected -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 footer__widget footer__widget-about">
+                        <h6 class="footer__widget-title">About</h6>
+                        <div class="footer__widget-content d-flex">
+                            <div class="widget__about-logo">
+                                <img src="assets/images/logo/logo-light-mini.png" alt="logo">
+                            </div>
+                            <div class="widget__about-text">
+                                <p>Technologisty, LLC is a Technology Solutions provider of All brands related to IT &
+                                    Technology Industry.</p>
+                                <Address>8324 Flanders Drive, Apt. 111
+                                    San Diego, CA, 92126-6209</Address>
+                                <!-- <ul class="social__icons list-unstyled">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  </ul>
+                   -->
+                                <!-- /.social-icons -->
+                            </div>
+                        </div>
+                    </div><!-- /.col-xl-3 -->
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2  footer__widget footer__widget-nav">
+                        <h6 class="footer__widget-title">Companies</h6>
+                        <div class="footer__widget-content">
+                            <nav>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Hewlett-Packard (hp)</a></li>
+                                    <li><a href="#">Juniper</a></li>
+                                    <li><a href="#">CISCO</a></li>
+                                    <li><a href="#">Asus</a></li>
+                                    <li><a href="#">Dell</a></li>
+
+                                </ul>
+                            </nav>
+                        </div><!-- /.footer-widget-content -->
+                    </div><!-- /.col-xl-2 -->
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2 footer__widget footer__widget-nav">
+                        <h6 class="footer__widget-title">Product</h6>
+                        <div class="footer__widget-content">
+                            <nav>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Switches</a></li>
+                                    <li><a href="#">Routers</a></li>
+                                    <li><a href="#">Servers</a></li>
+                                    <li><a href="#">Firewalls</a></li>
+                                    <li><a href="#">IP Phones</a></li>
+                                </ul>
+                            </nav>
+                        </div><!-- /.footer-widget-content -->
+                    </div><!-- /.col-xl-2 -->
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 footer__widget footer__widget-newsletter">
+                        <div class="footer__widget-content">
+                            <p>Sign up for latest news and insight from Technologisty.</p>
+                            <form class="widget__newsletter-form">
+                                <div class="form-group mb-0">
+                                    <input type="text" class="form-control" placeholder="Your Email Address">
+                                    <button type="submit" class="submit-btn">
+                                        <i class="fa fa-long-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div><!-- /.footer-widget-content -->
+                        <p class="text-right fz-13 mt-10 mb-0">You may withdraw your consent at any time!</p>
+                    </div><!-- /.col-xl-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.footer-top -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                        <div class="footer__copyright">
+                            <p class="fz-13 mb-0">
+
+                                Copyright &copy; 2019 Technologisty, LLC. All rights reserved
+                                <a href=""></a>
+                            </p>
+                        </div><!-- /.Footer-copyright -->
+                    </div><!-- /.col-lg-9 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </div><!-- /.Footer-bottom -->
+    </footer><!-- /.Footer -->
+    <button id="scrollTopBtn"><i class="fa fa-long-arrow-up"></i></button>
+
+    <div class="search-popup">
+        <i class="search__popup-close">&times;</i>
+        <form class="search__popup-form">
+            <input type="text" class="search__input" placeholder="Type Words Then Enter">
+            <button class="module__search-btn"><i class="fa fa-search"></i></button>
+        </form>
+    </div><!-- /. search-popup -->
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/plugins.js"></script>  
+  
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+
+    <script>
+        $('#datepicker').datepicker({     });
+    </script>
+
+</body>
+
+</html>

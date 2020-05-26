@@ -1,0 +1,114 @@
+.action__btn-contact{
+background-color: #3268a8;
+border-color: #3268a8;
+color: #fff !important; 
+}
+
+#quote-menu-btn{
+background-color: #3268a8;
+border-color: #3268a8;
+color: #fff;
+}
+.navbar-brand img{
+    max-width: 240px;
+   }
+
+
+   .fancybox-item .fancybox__icon{
+       color: #3268a8;
+   }   
+   .heading__subtitle{
+       color: #3268a8;
+   }
+   .about-layout3 .about__carousel{
+       background-color: #3268a8;
+   }
+   img::selection{
+       background-color: #3268a8;
+   }
+   .portfolio-item .portfolio__hover{
+       background-color: rgba(50, 104, 168, .95);
+   }
+   .bg-darkblue{
+       background-color: #3268a8;
+   }
+
+   .first-div p{
+    font-size: 18px;
+    /* color: #000000; */
+   }
+
+   .quote-page-title{
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 250px;
+   }
+   .quote-page-title .page-title-heading{
+       color: #fff;
+       text-align: center;
+   }
+
+    .btn.btn-outline-secondary.border-left-0{
+       display: none;
+   }
+
+   #datepicker{
+       height: 30px;
+       border: solid 1px #9b9b9b;
+       padding: 10px;
+     
+   }
+   #quoteid{
+       width: 250px;
+       height: 30px;
+       padding: 10px;
+       border: solid 1px #9b9b9b;
+      
+   }
+
+   #valid-date{
+     width: 250px;
+     height: 30px;
+     border: solid 1px #9b9b9b;
+
+   }
+
+  .mb-6{
+      margin-bottom: 6px;
+  }
+   .mb-10{
+       margin-bottom: 10px;
+   }
+   .mb-20{
+    margin-bottom: 20px;}
+
+    .mt-20{
+        margin-top: 20px;
+    }
+ .mt-30{
+     margin-top: 30px;
+ }
+ .mt-40{
+     margin-top: 40px;
+ }
+
+ .mb-60{
+     margin-bottom: 60px;
+ }
+    .gj-datepicker-md [role="right-icon"]{
+
+        top: 4px !important;
+        right: 6px !important;
+    }
+
+    .bill-to-forms input{
+        margin-top: 15px;
+        margin-bottom: 5px;
+        border-radius: 0;
+    }
+    #copy-to-btn{
+   
+       
+       border: solid 1px;
+    }
